@@ -22,12 +22,20 @@ window.addEventListener("scroll", function () {
 
 
 
+// Automatically include header and footer once the DOM is ready 
+/* document.addEventListener("DOMContentLoaded", () => {
+  let basePath = "";
 
+  // Detect if we're in a nested folder (like articles/article-1/)
+  if (window.location.pathname.includes("/articles/")) {
+    console.log("i am articles")
+    basePath = "../../";
+  } else {
+    basePath = "";
+  }
 
-// Automatically include header and footer once the DOM is ready
-document.addEventListener("DOMContentLoaded", () => {
-  includeHTML("/includes/header.html", "header-placeholder");
-  includeHTML("/includes/footer.html", "footer-placeholder");
-});
+  includeHTML(`${basePath}includes/header.html`, "header-placeholder");
+  includeHTML(`${basePath}includes/footer.html`, "footer-placeholder");
+}); */
 
 console.log(window.innerWidth);
