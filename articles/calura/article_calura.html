@@ -7,8 +7,7 @@
     <title>JA Calura</title>
 
     <!-- Icon -->
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" href="../../assets/images/icon.png" type="image/png" />
 
     <!-- SEO meta tags -->
     <meta
@@ -36,9 +35,12 @@
     <script src="../../assets/js/script.js" defer></script>
   </head>
   <body class="gray">
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
     <header id="header-placeholder">
       <div class="header-container">
-        <h2><a href="index.html" class="logo">JA</a></h2>
+        <h2><a href="../../index.html" class="logo">JA</a></h2>
         <nav class="main-nav">
           <p class="body-2"><a href="../../projects.html">PROJECTS</a></p>
           <p class="body-2"><a href="../../archive.html">ARCHIVE</a></p>
@@ -52,13 +54,21 @@
         <div class="article-intro-content">
           <div class="article-description-wrapper">
             <p class="body-2" id="article-intro-description">
-              Calura is an installation that drops viewers into the feeling of
-              hot summer days. It is based on a found archive of film photos
-              taken in Ischia and the beaches of Naples in the mid-1980s.
-              Visitors can turn the oscillation on or off to control when the
-              images change and adjust the speed of the fans to navigate between
-              six stations of music and sounds related to the archive's theme.
+              Calura is an interactive installation that drops viewers into the
+              feeling of hot summer days based on a fictional found archive of
+              film photos taken in Ischia and the beaches of Naples in the
+              mid-1980s. The rhythm of the picture are giving by he oscillation
+              of the fan that visitors can interact with. It creates a
+              nostalgic, multi-sensory journey that bridges past memories with
+              present interaction.
             </p>
+            <div class="article-info">
+              <h4>Challenge</h4>
+              <p class="body-3">
+                Creating new modes of interaction between the archive, people,
+                and interfaces through hacking objects
+              </p>
+            </div>
             <div class="article-info">
               <h4>Class</h4>
               <p class="body-3">
@@ -67,8 +77,8 @@
               </p>
             </div>
             <div class="article-info">
-              <h4>Duration</h4>
-              <p class="body-3">1 month</p>
+              <h4>Modality</h4>
+              <p class="body-3">1 month - team of 3</p>
             </div>
             <div class="article-info">
               <h4>Roles</h4>
@@ -76,7 +86,17 @@
             </div>
             <div class="article-info">
               <h4>Tools</h4>
-              <p class="body-3">Arduino, HTML, CSS, Javascript</p>
+              <p class="body-3">
+                Arduino, C++, HTML, CSS, Javascript, Raspberry Pi 5
+              </p>
+            </div>
+            <div class="article-info">
+              <p class="body-3">
+                <a
+                  href="https://master-interaction-design.notion.site/Calura-1b689104ecf980e4ab9acb57a6af6978"
+                  >more on the process here ↗</a
+                >
+              </p>
             </div>
           </div>
           <img
@@ -89,15 +109,29 @@
         <h3>OUTCOME</h3>
         <div class="outcome-wrapper">
           <p class="body-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum/p>
+            Warm, nostalgic, and immersive, Calura evokes the slow, sticky heat
+            of summer days by the sea. Through vintage-looking photos, ambient
+            sounds, and the gentle hum of fans, the installation creates a
+            sensory space that invites visitors to pause, reflect, and
+            experience the timeless feeling of languid summer afternoons.
+            <br />
+            <br />
+            Visitors can turn the oscillation on or off to control when the
+            images change and adjust the speed of the fans to navigate between
+            six stations of music and sounds related to the archive's theme.
           </p>
           <div class="outcome-image-wrapper-two">
             <img src="images/picture_1.jpg" alt="" />
-            <img src="images/picture_4.jpg" alt="" />
+            <video
+              src="images/video_1.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              controls
+            >
+              Your browser does not support the video tag.
+            </video>
             <img src="images/picture_3.jpg" alt="" />
             <img src="images/picture_2.jpg" alt="" />
           </div>
@@ -113,23 +147,109 @@
         >
           Your browser does not support the video tag.
         </video>
-        <h4>Fictive Archive</h4>
-        <div class="outcome-image-wrapper-three">
-          <!--           <img src="images/picture_blaupunkt_5.jpg" alt="" />
-          <img src="images/picture_blaupunkt_6.jpg" alt="" />
-          <img src="images/picture_blaupunkt_7.jpg" alt="" /> -->
-        </div>
       </section>
 
       <section class="article-process">
         <h3>PROCESS</h3>
-        <p class="body-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum/p>
-        </p>
+
+        <div class="outcome-image-wrapper-three wrapper-text">
+          <p class="body-2">
+            The project was driven by hands-on experimentation and iterative
+            prototyping. <br /><br />We began by testing the interaction logic
+            using mobile phones to simulate the experience. From there, we
+            transitioned to physical fans as the core interaction device, using
+            compass sensor to get the orientation of the fan that would trigger
+            the change of image. <br /><br />Sound design was the final layer of
+            the experience. We used magnets and magnetic sensors to detect the
+            rotation speed of each fan, allowing the sound to change dynamically
+            based on their combined speed. <br /><br />This process balanced
+            technical exploration with emotional storytelling, leading to a
+            cohesive and immersive experience.
+          </p>
+
+          <figure>
+            <img src="images/picture_5.png" alt="Caption for image 3" />
+            <figcaption>using the phone as sensor</figcaption>
+          </figure>
+          <figure>
+            <video
+              src="images/video_3.mp4"
+              class="video-process"
+              autoplay
+              muted
+              loop
+              playsinline
+              controls
+            >
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>testing</figcaption>
+          </figure>
+        </div>
+        <div class="article-process-learning">
+          <h4>Learning</h4>
+          <div class="outcome-image-wrapper-three wrapper-text">
+            <div>
+              <h4>Interactive installation</h4>
+              <p class="body-2">
+                Gained hands-on experience designing and prototyping physical
+                art installation that translate abstract concepts into
+                immersive, interactive experiences.
+              </p>
+            </div>
+            <div>
+              <h4>Balancing Concept and Technology</h4>
+              <p class="body-2">
+                Discovered how iterative prototyping helps merge artistic vision
+                with technical constraints in interactive installations.
+              </p>
+            </div>
+            <div>
+              <h4>Creative Teamwork</h4>
+              <p class="body-2">
+                Built confidence navigating team work, balancing individual
+                input with collective decisions in a fast-paced prototyping
+                process
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="article-process-section">
+          <h4>Creative coding and testing</h4>
+
+          <div class="outcome-image-wrapper-three">
+            <figure>
+              <video
+                src="images/video_5.mp4"
+                class="video-process"
+                muted
+                loop
+                playsinline
+                controls
+              >
+                Your browser does not support the video tag.
+              </video>
+              <figcaption>testing using the mouse to change picture</figcaption>
+            </figure>
+            <figure>
+              <video
+                src="images/video_4.mp4"
+                class="video-process"
+                muted
+                loop
+                playsinline
+                controls
+              >
+                Your browser does not support the video tag.
+              </video>
+              <figcaption>testing using the phone compass</figcaption>
+            </figure>
+            <figure>
+              <img src="images/picture_6.png" alt="Caption for image 3" />
+              <figcaption>fan hacking</figcaption>
+            </figure>
+          </div>
+        </div>
       </section>
 
       <section id="article-nav">

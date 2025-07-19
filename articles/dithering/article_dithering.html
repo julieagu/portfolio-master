@@ -7,8 +7,7 @@
     <title>JA Dithering</title>
 
     <!-- Icon -->
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" href="../../assets/images/icon.png" type="image/png" />
 
     <!-- SEO meta tags -->
     <meta
@@ -24,7 +23,7 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <links
+    <link
       href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Antonio:wght@100..700&family=Questrial&display=swap"
       rel="stylesheet"
     />
@@ -37,9 +36,12 @@
   </head>
 
   <body class="gray">
+        <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
     <header id="header-placeholder">
       <div class="header-container">
-        <h2><a href="index.html" class="logo">JA</a></h2>
+        <h2><a href="../../index.html" class="logo">JA</a></h2>
         <nav class="main-nav">
           <p class="body-2"><a href="../../projects.html">PROJECTS</a></p>
           <p class="body-2"><a href="../../archive.html">ARCHIVE</a></p>
@@ -60,6 +62,12 @@
               experience the creative possibilities of computational imaging.
             </p>
             <div class="article-info">
+              <h4>Challenge</h4>
+              <p class="body-3">
+                Creating an interactive experience using a 32x32 LED matrix
+              </p>
+            </div>
+            <div class="article-info">
               <h4>Class</h4>
               <p class="body-3">
                 Programming interactive object - master of interaction design
@@ -67,8 +75,8 @@
               </p>
             </div>
             <div class="article-info">
-              <h4>Duration</h4>
-              <p class="body-3">1 week</p>
+              <h4>Modality</h4>
+              <p class="body-3">1 week - team of 2</p>
             </div>
             <div class="article-info">
               <h4>Roles</h4>
@@ -76,9 +84,13 @@
             </div>
             <div class="article-info">
               <h4>Tools</h4>
-              <p class="body-3">LED matrix, HTML, CSS, Javascript</p>
+              <p class="body-3">LED matrix, HTML, Javascript</p>
+            </div>
+             <div class="article-info">
+              <p class="body-3"><a href=" https://master-interaction-design.notion.site/Dithering-experiments-b8787f74ee494b99bf03c06cd0f36e43">more on the process here ↗</a></p>
             </div>
           </div>
+          
           <img
             src="images/picture_main.jpg"
             alt="photography of a prototype of a vintage radio"
@@ -89,11 +101,11 @@
         <h3>OUTCOME</h3>
         <div class="outcome-wrapper">
           <p class="body-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum/p>
+            Our final project is a mirror art installation highlights the
+            various image alterations we experimented with through code while
+            embracing the constraints of the 32x32 pixel LED matrix. Using
+            keyboard, the spectator can play with image manipulation and pushed
+            the limits of the matrix to see what was possible.
           </p>
           <div class="outcome-image-wrapper-two">
             <img src="images/picture_1.jpg" alt="" />
@@ -113,23 +125,162 @@
         >
           Your browser does not support the video tag.
         </video>
-        <h4>Fictive Archive</h4>
-        <div class="outcome-image-wrapper-three">
-          <img src="images/picture_blaupunkt_5.jpg" alt="" />
-          <img src="images/picture_blaupunkt_6.jpg" alt="" />
-          <img src="images/picture_blaupunkt_7.jpg" alt="" />
-        </div>
       </section>
-
       <section class="article-process">
         <h3>PROCESS</h3>
-        <p class="body-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum/p>
-        </p>
+
+        <div class="outcome-image-wrapper-one-three wrapper-text">
+          <p class="body-2">
+            We started by connecting a webcam to a 32x32 LED matrix, quickly
+            learning to embrace its limitations by focusing on a cropped video
+            segment rather than the full feed. Curious about early digital
+            visuals, we explored dithering techniques like Floyd-Steinberg,
+            gradually adding more styles and real-time controls. The process was
+            fast-paced, hands-on, and rooted in trial, error, and creative
+            exploration. 
+            <br>
+            <br>
+
+            <br>
+
+            <br>
+
+            Dithering is a technique used to reduce
+            the color depth of an image and it weight, By arranging pixels in a
+            pattern, dithering tricks the human eye into perceiving smooth
+            transitions even when only a limited number of colors are present.
+          </p>
+
+          <figure>
+            <video
+              src="images/process_video_0.mp4"
+              class="video-process"
+              autoplay
+              muted
+              loop
+              playsinline
+              controls
+            >
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>webcame dithering experience</figcaption>
+          </figure>
+        </div>
+        <div class="article-process-section">
+          <h4>Creative coding and testing</h4>
+
+          <div class="outcome-image-wrapper-three">
+            <figure>
+              <video
+                src="images/process_video_3.mp4"
+                class="video-process"
+                muted
+                loop
+                playsinline
+                controls
+              >
+                Your browser does not support the video tag.
+              </video>
+              <figcaption>edge detection tes</figcaption>
+            </figure>
+            <figure>
+              <video
+                src="images/process_video_1.mp4"
+                class="video-process"
+                muted
+                loop
+                playsinline
+                controls
+              >
+                Your browser does not support the video tag.
+              </video>
+              <figcaption>dithering test</figcaption>
+            </figure>
+            <figure>
+              <video
+                src="images/process_video_2.mp4"
+                class="video-process"
+                muted
+                loop
+                playsinline
+                controls
+              >
+                Your browser does not support the video tag.
+              </video>
+              <figcaption>pixelization</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="article-process-learning">
+          <h4>Learning</h4>
+          <div class="outcome-image-wrapper-three wrapper-text">
+            <div>
+              <h4>Experimenting with Computer Vision</h4>
+              <p class="body-2">
+                Exploring computer vision techniques through pixel manipulation
+                and webcam input provided practical insights into image
+                processing fundamentals and the history of digital imaging.
+              </p>
+            </div>
+            <div>
+              <h4>Values of creative constraints</h4>
+              <p class="body-2">
+                Learned how creative constraints, like extreme low resolution,
+                can spark more thoughtful design decisions.
+              </p>
+            </div>
+            <div>
+              <h4>Code as a playful medium</h4>
+              <p class="body-2">
+                Discovered that playful, code-based interaction can lead to
+                simple yet compelling user experiences
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="article-process-section">
+          <h4>Dithering style</h4>
+          <div class="outcome-image-wrapper-three">
+            <figure>
+              <img src="images/picture_7.jpg" alt="Caption for image 3" />
+              <figcaption>pixelated image</figcaption>
+            </figure>
+            <figure>
+              <img src="images/picture_5.jpg" alt="Caption for image 3" />
+              <figcaption>dithering floyd-steinberg</figcaption>
+            </figure>
+            <figure>
+              <img src="images/picture_6.jpg" alt="Caption for image 3" />
+              <figcaption>edge detection</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="article-process-section">
+          <h4>Further exploration</h4>
+          <div class="outcome-image-wrapper-one-three wrapper-text">
+            <p class="body-2">
+              Building on the earlier experimentation, this version is made to
+              be experiment in the browser, using the full webcame feed. The
+              visitor now use hand gesture to navigate the various
+              image-altering algorithm.
+            </p>
+
+            <figure>
+              <video
+                src="images/process_video_4.mp4"
+                class="video-process"
+                autoplay
+                muted
+                loop
+                playsinline
+                controls
+              >
+                Your browser does not support the video tag.
+              </video>
+              <figcaption>webcame dithering experience</figcaption>
+            </figure>
+          </div>
+        </div>
       </section>
 
       <section id="article-nav">

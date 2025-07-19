@@ -7,8 +7,7 @@
     <title>JA Portfolio</title>
 
     <!-- Icon -->
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" href="assets/images/icon.png" type="image/png" />
 
     <!-- SEO meta tags-->
     <meta
@@ -30,12 +29,19 @@
     />
 
     <!-- Import -->
+
     <link rel="stylesheet" href="assets/css/variables.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <script src="assets/libraries/p5.min.js"></script>
+    <script src="assets/libraries/p5.sound.min.js"></script>
     <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/script_star.js" defer></script>
   </head>
   <body class="two-colored">
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
     <header class="header purple" id="header-placeholder">
       <div class="header-container">
         <h2><a href="index.html" class="logo">JA</a></h2>
@@ -48,7 +54,7 @@
     </header>
     <main>
       <!-- HERO SECTION -->
-      <section class="hero">
+      <section class="hero" data-cursor-theme="dark">
         <div>
           <h1 id="name-hero">Julie Agustoni</h1>
           <h1 id="title-hero">INTERACTION DESIGN</h1>
@@ -61,7 +67,7 @@
 
       <!-- FEATURED PROJECTS SECTION -->
       <section class="featured-projects">
-        <h3><a href="/projects.html">SELECTED PROJECTS</a></h3>
+        <h3><a href="projects.html">SELECTED PROJECTS</a></h3>
         <p class="body-2" id="featured-projects-description">
           Selections of projects reflecting diverse technical and creative
           skills
@@ -115,7 +121,7 @@
       </section>
 
       <!-- CORE SKILLS SECTION -->
-      <section class="core-skills">
+      <section class="core-skills" data-cursor-theme="dark">
         <h3>CORE SKILLS</h3>
         <div class="skills-wrapper">
           <div class="skill-description">
