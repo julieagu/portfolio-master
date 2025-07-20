@@ -461,7 +461,7 @@ footer {
 
 
 /* Caption on hover */
-.image-caption-hover .body-2 {
+.image-caption-hover .body-3 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -474,7 +474,7 @@ footer {
   pointer-events: none;
 }
 
-.image-caption-hover:hover .body-2 {
+.image-caption-hover:hover .body-3 {
   opacity: 1;
 }
 
@@ -523,16 +523,37 @@ p.body-1 {
   font-size: var(--body-1-size);
 }
 
-p.body-2 {
+p.body-2, li {
   font-size: var(--body-2-size);
 }
 
+p.italic{
+  font-style: italic;
+
+}
+
 p.body-3,
-#article-nav a {
+#article-nav a, li.list-3  {
   font-size: var(--body-3-size);
 }
 
+li.list-3 {
+  width: 80%;
+}
 
+ul {
+  list-style: none;
+  margin-top: calc(var(--gap)/2);
+}
+
+ul li::before {
+  content: "-  "; /* Dash */
+}
+
+ ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
 
 
 
@@ -642,6 +663,35 @@ body.gray #footer-placeholder {
   display: block;
 }
 
+.video-app{
+  width: 75%;
+  height: auto;
+  margin: var(--margin) 0 calc(var(--gap)*2) 0;
+}
+
+.outcome-wrapper-two {
+  display: grid;
+   grid-template-columns: 1fr 1fr;
+  gap: var(--gap); /* space between items */
+  align-items: flex-start;
+}
+
+.outcome-wrapper-two p{
+width: 80%;
+}
+
+.font-body{
+  font-family: var(--font-body);
+}
+
+
+
+/* Optional: make image responsive */
+.outcome-wrapper-two img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* set up gallery for 3 horizontal image */
 .outcome-image-wrapper-three {
@@ -675,7 +725,7 @@ body.gray #footer-placeholder {
   margin: calc(var(--margin) * 2) auto; /* This centers the block element horizontally */
 }
 
-.article-process-section, .article-process-learning {
+.article-process-section, .article-process-learning, #article-tali {
   margin-top: calc(var(--margin)*2);
 }
 
@@ -683,11 +733,11 @@ body.gray #footer-placeholder {
   width: 80%;
 }
 
-.article-process-learning h4{
+.article-process-learning h4, #article-tali, .wrapper-text{
   margin-bottom: var(--margin);
 }
 
-.article-process-section h4{
+.article-process-section h4, #article-tali h4{
   margin-bottom: var(--gap);
 }
 
@@ -697,6 +747,9 @@ body.gray #footer-placeholder {
   font-family: var(--font-body);
   margin-bottom: var(--gap);
 }
+
+
+
 
 .outcome-image-wrapper-one-three {
   display: grid;
@@ -765,6 +818,12 @@ body.gray #footer-placeholder {
     padding-top: 53px; /* adjust to your header's height */
   }
 
+
+  .cursor-dot {
+    display: none;
+  }
+
+
   .hero,
   .about-intro {
     flex-direction: column;
@@ -825,7 +884,8 @@ body.gray #footer-placeholder {
     height: auto;
   }
 
-  .article-description-wrapper, .article-process-learning p  {
+  .article-description-wrapper, .article-process-learning p, .outcome-wrapper-two p, 
+  li.list-3   {
     width: 100%;
   }
 
@@ -837,6 +897,7 @@ body.gray #footer-placeholder {
   .article-info h4 {
     width: auto; /* let it grow naturally */
   }
+
 
   
 
