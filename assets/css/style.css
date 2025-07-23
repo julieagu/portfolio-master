@@ -814,9 +814,9 @@ width: 80%;
 
 /* -- HALF DESKTOP MEDIA QUERY -- */
 @media (max-width: 1200px) {
-  .logo {
+/*   .logo {
     background-color: yellow;
-  }
+  } */
 
   #profil-picture {
     width: 300px;
@@ -848,9 +848,9 @@ width: 80%;
 
 /* -- TABLET MEDIA QUERY -- */
 @media (max-width: 768px) {
-  .logo {
+/*   .logo {
     background-color: red;
-  }
+  } */
   body,
   body.gray {
     padding-top: 53px; /* adjust to your header's height */
@@ -965,9 +965,9 @@ width: 80%;
 
 /* -- MOBILE MEDIA QUERY -- */
 @media (max-width: 480px) {
-  .logo {
+/*   .logo {
     background-color: blue;
-  }
+  } */
   body {
     padding-top: 35px; /* adjust to your header's height */
   }
