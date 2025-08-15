@@ -19,7 +19,7 @@
   --body-2-size: 1.5rem;      /* 24px */
   --body-3-size: 1.25rem;     /* 20px */
 
-  --gap: 14px;
+  --gap: 24px;
   --margin: calc(var(--gap) * 4);
 }
 
